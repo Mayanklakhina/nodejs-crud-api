@@ -1,7 +1,9 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const port = 9000;
-const url = 'mongodb://localhost/programmerDB'
+
+const dotenv = require('dotenv').config();
+const url = process.env.DB_URL
 
 const app = express();
 
